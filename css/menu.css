@@ -1,0 +1,134 @@
+.box {
+    background-color: #00011c;
+    color: #fff;
+    font-family: roboto;
+}
+
+.cxBurger{
+    display: none;
+}
+
+
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+  }
+
+.menu-burger span {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #fff;
+}
+
+.menu {
+    background-color: #00011c;
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.lateral {
+    display: none;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu img {
+    height: 150px; 
+}
+
+
+.menu_caixa {
+    height: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.menu_link:hover {
+    color: #bea224;
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
+    margin-bottom: -5px;
+    
+} 
+
+@media (max-width: 768px){
+    .menu_caixa {
+        display: none;
+    }
+    
+    .menu_link {
+        display: inline-block;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 25px;
+        width: 75%;
+        text-align: center;
+    }
+
+    .menu_link:hover {
+        color: #bea224;
+        border-bottom: 2px solid;
+        padding: 0 0 25px 0;
+        margin: 0;   
+
+    }    
+
+    .lateral {
+        display: flex; /*mudar flex*/
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 65%;
+        height: 50%;
+        position: absolute;
+        background-color: #12121b;
+        top: 150;
+        left: 0;
+        z-index: 1;
+    }
+
+    .toggle {
+        display: none;
+    }
+    
+    .cxBurger{
+        display: block;
+        padding-left: 20px;
+    }  
+    
+    .box {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+}
+
+@media (max-width: 480px){
+    .menu img {
+        height: 100px; 
+    }
+    .cxBurger{
+        display: block;
+        padding-left: 20px;
+    }
+    
+
+    .lateral {
+        top: 100;
+        
+    }
+
+}
