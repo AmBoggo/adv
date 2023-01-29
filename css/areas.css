@@ -41,6 +41,8 @@
     color: #ffffff;
     font-size: 3rem;
     margin: auto;
+    text-shadow: 2px 2px #000000;
+
 
     
 }
@@ -49,11 +51,16 @@
     width: 150px;
     height: 150px;
     margin: 50px 50px 0 50px;
-    border-radius: 999%;
+    /* border-radius: 999%; */
+    background-color: rgba(255, 255, 255, 0.459);
+    padding: 25px;
 }
 
 .item_areas {
     padding-bottom: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
 }
 
 @media (max-width: 1100px){
@@ -81,27 +88,26 @@
         
     }
     .img {
-        width: 120px;
-        height: 120px;
-        margin: 25px 25px 0 25px;
-        border-radius: 999%;
+        width: 100px;
+        height: 100px;
+        margin: 0px 0px 0 0px;
     }
 }
 
 @media (max-width: 480px){
     .fund {
         width: 100vw;
-        height: 1350px;
+        height: 1400px;
     }
     .areas h2{
         font-size: 1.5rem;
         margin-bottom: 25px;
     }
     .img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         margin: 5px 5px 0 5px;
-        border-radius: 999%;
+        padding: 15px;
     }
     .caixa_areas {
         padding-top: 5px;
@@ -109,6 +115,12 @@
         flex-direction: column;
         
     }
+    .item_areas p {
+        margin-top: 5px;
+        
+        
+    }
+
     .item_areas {
         font-size: 1.2rem;
 
